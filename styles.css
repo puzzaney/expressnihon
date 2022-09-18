@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4f1588;
+    text-decoration: none;
+}
+
+button {
+    color: #fa6503;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    padding-bottom: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #fa6503;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(79, 21, 136, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: rgba(79, 21, 136, 0.5);
+    background-color: rgba(250, 101, 3, 0.9);
+}
+
+header img {
+    height: 75px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.main-container h1 {
+    font-family: "Pacifico", sans-serif;
+    color: red;
+    font-size: 80px;
+}
+
+.main-container h3,
+.main-container p,
+.services-container p {
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    margin: 30px 0;
+}
+
+.main-container h3 {
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+.cover-img {
+    height: 85vh;
+}
+
+.services-container {
+    width: 75%;
+    margin: auto auto;
+}
+
+.services-container h1,
+.features h1 {
+    color: #4f1588;
+    text-align: center;
+    font-family: "Monstrat", sans-serif;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.services-container ul {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.services-container ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 50px;
+}
+
+.services-container ul li .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-container ul li img {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.services-container ul li:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-container ul li:nth-of-type(2) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.services-container ul li:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-container ul li:nth-of-type(4) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.services-container ul li:nth-of-type(5) {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 
+.services-container ul li:hover {
+    scale: 1.1;
+    color: #fa6503;
+} */
+
+.features {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fa6503;
+}
+
+.features-elements {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-elements li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.features h1 {
+    padding-top: 50px;
+}
+
+.features-elements li i {
+    font-size: 100px;
+    padding: 0;
+}
+
+.features-elements li h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    /* background-color: #fa6503; */
+}
+
+.features-elements li:hover {
+    scale: 1.3;
+}
